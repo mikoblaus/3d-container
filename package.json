@@ -1,0 +1,39 @@
+{
+  "name": "3d-container",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./bundler/webpack.prod.js",
+    "start": "webpack serve --config ./bundler/webpack.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "ip": "^2.0.1",
+    "mini-css-extract-plugin": "^2.9.2",
+    "portfinder-sync": "^0.0.2",
+    "raw-loader": "^4.0.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "lil-gui": "^0.18.2",
+    "stats.js": "^0.17.0",
+    "three": "^0.153.0"
+  }
+}
