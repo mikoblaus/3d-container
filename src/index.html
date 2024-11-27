@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gorgia</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            z-index: 10;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 120px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .left-container {
+            width: 330px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+            padding: 10px;
+            color: #42a5f5;
+            text-align: end;
+        }
+
+        .button-container button {
+            padding: 10px;
+            margin-right: 10px;
+            background-color: #FF5733;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="logo-container">
+    <img src="../static/logo.png" alt="logo" style="height:70px"/>
+</div>
+<div class="button-container">
+    <button id="arrange-button">ამანათების ჩაწყობა</button>
+</div>
+<div class="left-container">
+    <strong>კონტეინერის მოცულობა : </strong> <br/>
+    <p>სიგრძე: 2.8 მ.</p>
+    <p>სიგანე: 1.7 მ.</p>
+    <p>სიმაღლე: 1.8 მ.</p>
+    <p>საერთო მოცულობა: 8 m³</p> <br/>
+    <p id="totalVolume"></p>
+    <p id="remainingVolume"></p> <br/>
+<!--    <p>კონტეინერი შევსებულია: 35% </p>-->
+<!--    <p>კონტეინერი შევსებულია: 35% </p>-->
+</div>
+<canvas class="canvas"></canvas>
+</body>
+</html>
